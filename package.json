@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "dotnet run",
-    "postinstall": "npm run download-webviewer",
+    "postinstall": "npm --prefix ./ClientApp install ./ClientApp && npm run download-webviewer",
     "download-webviewer": "npx @pdftron/webviewer-downloader --webviewerLocation wwwroot/lib"
   },
   "devDependencies": {
