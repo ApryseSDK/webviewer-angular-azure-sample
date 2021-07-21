@@ -63,11 +63,11 @@ export class WebViewerComponent implements OnInit, AfterViewInit {
             });
 
             // or from the docViewer instance
-            instance.docViewer.on('annotationsLoaded', () => {
+            instance.docViewer.addEventListener('annotationsLoaded', () => {
                 console.log('annotations loaded');
             });
 
-            instance.docViewer.on('documentLoaded', this.wvDocumentLoadedHandler)
+            instance.docViewer.addEventListener('documentLoaded', this.wvDocumentLoadedHandler)
         })
     }
 }
