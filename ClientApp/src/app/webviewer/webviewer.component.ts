@@ -1,6 +1,5 @@
 import { Component, ViewChild, OnInit, ElementRef, AfterViewInit } from '@angular/core';
-
-declare const WebViewer: any;
+import WebViewer from '@pdftron/webviewer';
 
 @Component({
     selector: 'web-viewer',
